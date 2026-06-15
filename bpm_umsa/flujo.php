@@ -48,6 +48,6 @@ $form_json = file_get_contents('data/formularios.json');
 $formularios = json_decode($form_json, true);
 $nombre_pantalla = $infoProceso['pantalla'];
 $campos = $formularios[$nombre_pantalla] ?? [];
-?>
+
 require_once 'vistas/flujo_vista.php';
 ?>
