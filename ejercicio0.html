@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelado del Proceso</title>
+    
+    <style>
+        /* Estilos básicos para que la web ocupe toda la pantalla y mantenga el estilo oscuro */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f 0%, #0f0f1a 100%);
+            color: white;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 32px;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+            color: #66fcf1;
+        }
+
+        p {
+            margin-bottom: 40px;
+            font-size: 16px;
+            opacity: 0.8;
+            color: #c5c6c7;
+        }
+
+        /* Estilos de las imágenes */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(102, 252, 241, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.02);
+            border-color: #66fcf1;
+        }
+
+        /* Botón de volver */
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #66fcf1;
+            text-decoration: none;
+            border: 2px solid #66fcf1;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #66fcf1;
+            color: #0f0f1a;
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Modelado del Proceso</h1>
+        <p>Diagrama de flujo del trámite, identificando entradas, procesos, validaciones y resultados</p>
+
+        <div class="image-container">
+            <!-- Primera imagen -->
+            <img src="imagen1.jpg" alt="Parte 1 del diagrama de flujo">
+            
+            <!-- Segunda imagen -->
+            <img src="imagen2.jpg" alt="Parte 2 del diagrama de flujo">
+        </div>
+
+        <a href="index.html" class="back-btn">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
