@@ -39,6 +39,5 @@ foreach ($tramites as $t) {
         }
     }
 }
-?>
 require_once 'vistas/bandeja_vista.php';
 ?>
