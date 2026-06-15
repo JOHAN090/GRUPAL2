@@ -1,0 +1,201 @@
+[
+    {
+        "id": 1,
+        "flujo": "F1",
+        "estudiante": "Johan Ludvig Misme Flores",
+        "proceso_actual": "P11",
+        "actor_actual": "Ninguno",
+        "estado": "Finalizado",
+        "fecha_inicio": "2026-06-15 11:57:48",
+        "historial": [
+            {
+                "proceso": "P1",
+                "accion": "Tr\u00e1mite iniciado",
+                "fecha": "2026-06-15 11:57:48"
+            },
+            {
+                "proceso": "P2",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 11:58:03"
+            },
+            {
+                "proceso": "P3",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 11:58:25"
+            },
+            {
+                "proceso": "P4",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 11:58:58"
+            },
+            {
+                "proceso": "P5",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 11:59:19"
+            },
+            {
+                "proceso": "P6",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 11:59:53"
+            },
+            {
+                "proceso": "P7",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:00:07"
+            },
+            {
+                "proceso": "P8",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:00:29"
+            },
+            {
+                "proceso": "P9",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:00:48"
+            },
+            {
+                "proceso": "P10",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:00:59"
+            },
+            {
+                "proceso": "P11",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:01:09"
+            },
+            {
+                "proceso": "FIN",
+                "accion": "Operaci\u00f3n completada de forma regular",
+                "fecha": "2026-06-15 12:01:42"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "flujo": "F2",
+        "estudiante": "Johan Ludvig Misme Flores",
+        "proceso_actual": "P13",
+        "actor_actual": "Ninguno",
+        "estado": "Finalizado",
+        "fecha_inicio": "2026-06-15 12:02:26",
+        "historial": [
+            {
+                "proceso": "P1",
+                "accion": "Tr\u00e1mite iniciado",
+                "fecha": "2026-06-15 12:02:26"
+            },
+            {
+                "proceso": "P2",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:02:41"
+            },
+            {
+                "proceso": "P3",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:03:14"
+            },
+            {
+                "proceso": "P4",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:03:41"
+            },
+            {
+                "proceso": "P5",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:03:49"
+            },
+            {
+                "proceso": "P6",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:04:17"
+            },
+            {
+                "proceso": "P7",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:04:31"
+            },
+            {
+                "proceso": "P8",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:04:49"
+            },
+            {
+                "proceso": "P9",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:05:12"
+            },
+            {
+                "proceso": "P10",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:05:35"
+            },
+            {
+                "proceso": "P11",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:05:55"
+            },
+            {
+                "proceso": "P12",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:06:15"
+            },
+            {
+                "proceso": "P13",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:06:31"
+            },
+            {
+                "proceso": "FIN",
+                "accion": "Operaci\u00f3n completada de forma regular",
+                "fecha": "2026-06-15 12:06:48"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "flujo": "F2",
+        "estudiante": "Johan Ludvig Misme Flores",
+        "proceso_actual": "P13",
+        "actor_actual": "Ninguno",
+        "estado": "Finalizado",
+        "fecha_inicio": "2026-06-15 12:07:48",
+        "historial": [
+            {
+                "proceso": "P1",
+                "accion": "Tr\u00e1mite iniciado",
+                "fecha": "2026-06-15 12:07:48"
+            },
+            {
+                "proceso": "P13",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:07:57"
+            },
+            {
+                "proceso": "FIN",
+                "accion": "Operaci\u00f3n completada de forma regular",
+                "fecha": "2026-06-15 12:08:33"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "flujo": "F2",
+        "estudiante": "Johan Ludvig Misme Flores",
+        "proceso_actual": "P9",
+        "actor_actual": "Kardex Acad\u00e9mico",
+        "estado": "En progreso",
+        "fecha_inicio": "2026-06-15 12:08:36",
+        "historial": [
+            {
+                "proceso": "P1",
+                "accion": "Tr\u00e1mite iniciado",
+                "fecha": "2026-06-15 12:08:36"
+            },
+            {
+                "proceso": "P9",
+                "accion": "Datos del paso guardados y validados en el sistema.",
+                "fecha": "2026-06-15 12:08:44"
+            }
+        ]
+    }
+]

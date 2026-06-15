@@ -1,0 +1,37 @@
+{
+  "johan_estudiante": {
+    "password": "123",
+    "rol": "Estudiante",
+    "nombre": "Johan Ludvig Misme Flores"
+  },
+  "admin_umsa": {
+    "password": "123",
+    "rol": "Usuarios UMSA",
+    "nombre": "Operador (Usuarios UMSA)"
+  },
+  "admin_sia": {
+    "password": "123",
+    "rol": "Sistema SIA",
+    "nombre": "Administrador (Sistema SIA)"
+  },
+  "admin_ssa": {
+    "password": "123",
+    "rol": "Sistema SSA",
+    "nombre": "Administrador (Sistema SSA)"
+  },
+  "kardex_ka": {
+    "password": "123",
+    "rol": "Kardex Académico",
+    "nombre": "Lic. Mendoza (Kardex Informática)"
+  },
+  "tesoro_tu": {
+    "password": "123",
+    "rol": "Tesoro Universitario",
+    "nombre": "Cajero Central (Tesoro)"
+  },
+  "director_dc": {
+    "password": "123",
+    "rol": "Dirección de Carrera",
+    "nombre": "Director de Carrera (Informática)"
+  }
+}

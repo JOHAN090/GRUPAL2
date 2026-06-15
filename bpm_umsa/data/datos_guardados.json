@@ -1,0 +1,133 @@
+{
+    "1": {
+        "P1": {
+            "ru": "67248723",
+            "ci": "62384",
+            "email": "johan@umsa.bo",
+            "telefono": "478294"
+        },
+        "P2": {
+            "cod_verificacion": "VERIF-6A2FCCB7852DA",
+            "estado_cuenta": "Cuenta Activa y Limpia",
+            "obs_cuenta": "shdjkdhkjads"
+        },
+        "P3": {
+            "nro_cpt": "CPT-6A2FCCD0035F7",
+            "fecha_deposito": "2026-06-15",
+            "monto_matricula": "27",
+            "canal_pago": "UNIMOVIL Plus"
+        },
+        "P4": {
+            "validacion_sia": "Matr\u00edcula Vigente - Pago Confirmado",
+            "informe_fiscalizacion": "hdjashdakjdhjk"
+        },
+        "P5": {
+            "confirmar_pin": "47234238",
+            "captcha": "huda"
+        },
+        "P6": {
+            "log_servidor": "LOG-6A2FCD244B81F",
+            "ip_conexion": "192.168.114.70"
+        },
+        "P7": {
+            "materia_1": "INF-111 Introducci\u00f3n a la Inform\u00e1tica - Paralelo A",
+            "materia_2": "INF-112 Organ. y Arq. de Computadoras - Paralelo C",
+            "materia_3": "INF-113 Laboratorio de Computaci\u00f3n - Paralelo B",
+            "turno_preferencia": "Ma\u00f1ana"
+        },
+        "P8": {
+            "control_choques": "Cumple todos los requisitos",
+            "creditos_necesarios": "4"
+        },
+        "P9": {
+            "reporte_cupos": "Cupos Disponibles Confirmados",
+            "paralelos_asignados": "3"
+        },
+        "P10": {
+            "hash_transaccion": "SFE-6A2FCD5BBC119",
+            "periodo_gestion": "II\/2026",
+            "obs_registro": "hsdajkdhj"
+        },
+        "P11": []
+    },
+    "2": {
+        "P1": {
+            "mencion_egreso": "Ingenier\u00eda de Software",
+            "ano_ingreso": "2002",
+            "motivo_egreso": "sbadhjad",
+            "telefono_contacto": "78242"
+        },
+        "P2": {
+            "total_creditos": "12",
+            "cantidad_materias": "12",
+            "promedio_actual": "100"
+        },
+        "P3": {
+            "idioma_valido": "si",
+            "nivel_idioma": "Lectura y Comprensi\u00f3n",
+            "institucion_idioma": "sahbj"
+        },
+        "P4": {
+            "interaccion_social": "12",
+            "horas_completadas": "12"
+        },
+        "P5": {
+            "recibo_valores": "CPT-6A2FCE0F87804",
+            "fecha_pago": "2002-06-12",
+            "monto_valores": "1200",
+            "banco_valores": "Banco Uni\u00f3n S.A."
+        },
+        "P6": {
+            "terminal_caja": "CAJA-6A2FCE2CD0C2E",
+            "nro_comprobante": "COMP-6A2FCE2CD0C63",
+            "firma_cajero": "FIRM-6A2FCE2CD0C68"
+        },
+        "P7": {
+            "estado_conciliacion": "Aprobado - Fondos en Cuenta",
+            "verificacion_bancaria_tu": "DEP-6A2FCE3D9626E"
+        },
+        "P8": {
+            "link_expediente": "hsakkjdas",
+            "link_ci": "hadkasd",
+            "link_matricula": "hadjkhads"
+        },
+        "P9": {
+            "fojas_totales": "12",
+            "obs_kardex": "daksdn",
+            "informe_foliacion": "jhakdhsd"
+        },
+        "P10": {
+            "resolucion_rd": "RD-6A2FCE7C84B3D",
+            "fecha_resolucion": "2002-05-12",
+            "firma_director": "FIRM-DIR-6A2FCE7C84B55"
+        },
+        "P11": {
+            "serie_carton": "SERIE-6A2FCE8D3160E",
+            "fecha_emision_cert": "2022-04-12",
+            "responsable_impresion": "sajdalkd"
+        },
+        "P12": {
+            "libro_actas": "12",
+            "pagina_acta": "12",
+            "nro_titulo": "22"
+        },
+        "P13": []
+    },
+    "3": {
+        "P1": {
+            "mencion_egreso": "Gesti\u00f3n de Sistemas de Informaci\u00f3n",
+            "ano_ingreso": "2222",
+            "motivo_egreso": "22",
+            "telefono_contacto": "22"
+        },
+        "P13": []
+    },
+    "4": {
+        "P1": {
+            "mencion_egreso": "Ingenier\u00eda de Software",
+            "ano_ingreso": "2222",
+            "motivo_egreso": "22",
+            "telefono_contacto": "222"
+        }
+    }
+}

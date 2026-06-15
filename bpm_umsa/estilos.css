@@ -1,0 +1,342 @@
+/* Estilos Globales Futuristas - Cyberpunk / Glassmorphism */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-dark: #050505;
+    --neon-blue: #00f3ff;
+    --neon-purple: #bc13fe;
+    --neon-pink: #ff007f;
+    --glass-bg: rgba(10, 15, 30, 0.6);
+    --glass-border: rgba(0, 243, 255, 0.2);
+    --text-main: #e0e6ed;
+    --text-muted: #8b9bb4;
+}
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main);
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Fondo de partículas / Efectos */
+#particles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    pointer-events: none;
+    background: radial-gradient(circle at center, #0a1128 0%, #010205 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Glassmorphism Cards */
+.cyber-card, .clean-card, .login-card, .card, .form-card {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.05), inset 0 0 10px rgba(0, 243, 255, 0.02);
+    color: var(--text-main) !important;
+    transition: all 0.3s ease;
+}
+
+.cyber-card:hover, .clean-card:hover, .form-card:hover {
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.15), inset 0 0 15px rgba(0, 243, 255, 0.05);
+    border-color: rgba(0, 243, 255, 0.4) !important;
+}
+
+/* Navbar */
+.navbar-custom, .topbar {
+    background: rgba(5, 5, 5, 0.8) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--neon-blue);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+.navbar-brand .text-primary {
+    color: var(--neon-blue) !important;
+    text-shadow: 0 0 8px var(--neon-blue);
+}
+.navbar-brand.text-dark {
+    color: #fff !important;
+}
+
+/* Formularios */
+.form-label {
+    color: var(--neon-blue) !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.form-control, .form-control-light, .form-select {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--neon-blue) !important;
+    border-radius: 6px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(0, 24, 40, 0.8) !important;
+    border-color: var(--neon-blue) !important;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.4) !important;
+    color: #fff !important;
+}
+
+.form-control::placeholder {
+    color: rgba(0, 243, 255, 0.4) !important;
+}
+
+/* Botones Neón */
+.btn-primary, .btn-pastel-primary {
+    background: transparent !important;
+    border: 1px solid var(--neon-blue) !important;
+    color: var(--neon-blue) !important;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.1), inset 0 0 10px rgba(0, 243, 255, 0.1);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-pastel-primary:hover {
+    background: var(--neon-blue) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--neon-blue), inset 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+}
+
+.btn-success {
+    background: transparent !important;
+    border: 1px solid #00ff88 !important;
+    color: #00ff88 !important;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.1), inset 0 0 10px rgba(0, 255, 136, 0.1);
+    font-family: 'Orbitron', sans-serif;
+}
+.btn-success:hover {
+    background: #00ff88 !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.btn-danger {
+    background: transparent !important;
+    border: 1px solid var(--neon-pink) !important;
+    color: var(--neon-pink) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.1), inset 0 0 10px rgba(255, 0, 127, 0.1);
+    font-family: 'Orbitron', sans-serif;
+}
+.btn-danger:hover {
+    background: var(--neon-pink) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--neon-pink);
+}
+
+.btn-outline-secondary, .btn-outline-light, .btn-outline-danger {
+    font-family: 'Orbitron', sans-serif;
+    background: transparent !important;
+}
+
+.btn-outline-danger {
+    border-color: var(--neon-pink) !important;
+    color: var(--neon-pink) !important;
+}
+.btn-outline-danger:hover {
+    background: var(--neon-pink) !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+.btn-outline-light {
+    border-color: var(--neon-blue) !important;
+    color: var(--neon-blue) !important;
+}
+.btn-outline-light:hover {
+    background: var(--neon-blue) !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+
+/* Tablas */
+.table {
+    color: var(--text-main) !important;
+    background: transparent !important;
+}
+.table thead th {
+    background-color: rgba(0, 243, 255, 0.05) !important;
+    color: var(--neon-blue) !important;
+    border-bottom: 2px solid var(--neon-blue) !important;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.table tbody td {
+    border-bottom: 1px solid rgba(0, 243, 255, 0.1) !important;
+    background: transparent !important;
+    color: var(--text-main) !important;
+}
+.table-hover tbody tr:hover td {
+    background: rgba(0, 243, 255, 0.08) !important;
+    box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* Badges */
+.badge.bg-primary { background-color: var(--neon-blue) !important; color: #000 !important; box-shadow: 0 0 8px var(--neon-blue); }
+.badge.bg-secondary { background-color: var(--neon-purple) !important; color: #fff !important; box-shadow: 0 0 8px var(--neon-purple); }
+.badge.bg-light { background-color: transparent !important; border: 1px solid var(--neon-blue) !important; color: var(--neon-blue) !important; }
+.badge.bg-dark { background-color: #000 !important; border: 1px solid var(--neon-pink) !important; color: var(--neon-pink) !important; text-shadow: 0 0 5px var(--neon-pink); box-shadow: 0 0 5px rgba(255,0,127,0.5); }
+.badge.bg-warning-subtle { background-color: rgba(255, 170, 0, 0.2) !important; border: 1px solid #ffaa00 !important; color: #ffaa00 !important; }
+.badge.text-warning-emphasis { color: #ffaa00 !important; }
+
+/* Tabs en Bandeja */
+.nav-tabs {
+    border-bottom: 1px solid rgba(0, 243, 255, 0.2) !important;
+}
+.nav-tabs .nav-link {
+    color: var(--text-muted);
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    transition: all 0.3s;
+}
+.nav-tabs .nav-link:hover {
+    color: var(--neon-blue);
+    border: none;
+    text-shadow: 0 0 8px var(--neon-blue);
+}
+.nav-tabs .nav-link.active {
+    background: transparent !important;
+    color: var(--neon-blue) !important;
+    border-bottom: 2px solid var(--neon-blue) !important;
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* Tramite Blocks (Bandeja) */
+.tramite-block {
+    background: rgba(10, 15, 30, 0.6) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+.tramite-block::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.2), transparent);
+    transform: skewX(-20deg);
+    transition: all 0.5s;
+}
+.tramite-block:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--neon-blue) !important;
+    box-shadow: 0 10px 30px rgba(0, 243, 255, 0.2), inset 0 0 15px rgba(0, 243, 255, 0.1);
+}
+.tramite-block:hover::before {
+    left: 150%;
+}
+.tramite-block h5 {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+/* Info Box */
+.info-top-box {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid var(--neon-blue) !important;
+    color: var(--neon-blue) !important;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+.info-top-box .text-dark {
+    color: #fff !important;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Animaciones */
+.login-card {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.login-card.loaded {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.clean-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+.clean-card.show-anim {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Textos Generales Fix */
+.text-dark { color: #fff !important; }
+.text-muted { color: var(--text-muted) !important; }
+.text-secondary { color: var(--text-muted) !important; }
+.text-primary { color: var(--neon-blue) !important; text-shadow: 0 0 8px var(--neon-blue); }
+.bg-light { background-color: rgba(255,255,255,0.05) !important; }
+.bg-white { background-color: rgba(0,0,0,0.5) !important; border: 1px solid var(--glass-border) !important; }
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0, 243, 255, 0.075) !important; }
+
+/* Fix para alertas */
+.alert-danger {
+    background-color: rgba(255, 0, 127, 0.1) !important;
+    border: 1px solid var(--neon-pink) !important;
+    color: var(--neon-pink) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+}
+.alert-info {
+    background-color: rgba(0, 243, 255, 0.1) !important;
+    border: 1px solid var(--neon-blue) !important;
+    color: var(--neon-blue) !important;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+/* ------------------------------------- */
+/* CRÍTICO: Protección del Área de PDF   */
+/* ------------------------------------- */
+#renderPDF {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: Arial, sans-serif !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 40px !important;
+}
+
+#renderPDF * {
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    font-family: Arial, sans-serif !important;
+}
+
+#renderPDF div { background-color: transparent !important; }
+#renderPDF img { display: inline-block !important; mix-blend-mode: normal !important; filter: none !important; }

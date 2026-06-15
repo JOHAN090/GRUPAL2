@@ -1,0 +1,451 @@
+{
+  "activar_cuenta": [
+    {
+      "label": "Registro Universitario (RU)",
+      "nombre": "ru",
+      "tipo": "number"
+    },
+    {
+      "label": "Cédula de Identidad (CI)",
+      "nombre": "ci",
+      "tipo": "text"
+    },
+    {
+      "label": "Correo Electrónico Institucional",
+      "nombre": "email",
+      "tipo": "email"
+    },
+    {
+      "label": "Número de Celular (Para notificaciones)",
+      "nombre": "telefono",
+      "tipo": "number"
+    }
+  ],
+  "verif_cuenta": [
+    {
+      "label": "Código de Verificación de Sistema (Cruce de Datos)",
+      "nombre": "cod_verificacion",
+      "tipo": "auto",
+      "prefix": "VERIF-"
+    },
+    {
+      "label": "Estado de la Cuenta en Servidor",
+      "nombre": "estado_cuenta",
+      "tipo": "select",
+      "opciones": [
+        "Cuenta Activa y Limpia",
+        "Cuenta con Multas Pendientes",
+        "Cuenta Suspendida"
+      ]
+    },
+    {
+      "label": "Observaciones del Operador de Sistema",
+      "nombre": "obs_cuenta",
+      "tipo": "text"
+    }
+  ],
+  "pago_matricula": [
+    {
+      "label": "Número de CPT (Código de Pago de Trámite)",
+      "nombre": "nro_cpt",
+      "tipo": "auto",
+      "prefix": "CPT-"
+    },
+    {
+      "label": "Fecha exacta del Depósito Bancario",
+      "nombre": "fecha_deposito",
+      "tipo": "date"
+    },
+    {
+      "label": "Monto Pagado (Bs)",
+      "nombre": "monto_matricula",
+      "tipo": "fijo",
+      "valor": "27"
+    },
+    {
+      "label": "Canal de Pago Utilizado",
+      "nombre": "canal_pago",
+      "tipo": "select",
+      "opciones": [
+        "Ventanilla Banco Unión",
+        "UNIMOVIL Plus",
+        "Pago Seguro Electrónico (Síntesis)"
+      ]
+    }
+  ],
+  "verif_matricula": [
+    {
+      "label": "Validación en Base de Datos SIA",
+      "nombre": "validacion_sia",
+      "tipo": "select",
+      "opciones": [
+        "Matrícula Vigente - Pago Confirmado",
+        "Pago No Encontrado - Rechazar"
+      ]
+    },
+    {
+      "label": "Informe Técnico de Fiscalización Financiera (SIA)",
+      "nombre": "informe_fiscalizacion",
+      "tipo": "text"
+    }
+  ],
+  "login_ssa": [
+    {
+      "label": "Confirmación de PIN de Acceso Institucional",
+      "nombre": "confirmar_pin",
+      "tipo": "password"
+    },
+    {
+      "label": "Ingrese el código de seguridad (Captcha visual)",
+      "nombre": "captcha",
+      "tipo": "text"
+    }
+  ],
+  "verif_credenciales": [
+    {
+      "label": "Estado de Conexión del Token y Logs del Servidor",
+      "nombre": "log_servidor",
+      "tipo": "auto",
+      "prefix": "LOG-"
+    },
+    {
+      "label": "IP de Conexión Registrada",
+      "nombre": "ip_conexion",
+      "tipo": "auto_ip"
+    }
+  ],
+  "seleccion_materias": [
+    {
+      "label": "Materia de Primer Nivel y Paralelo",
+      "nombre": "materia_1",
+      "tipo": "select",
+      "opciones": [
+        "INF-111 Introducción a la Informática - Paralelo A",
+        "INF-111 Introducción a la Informática - Paralelo B",
+        "Ninguna / Ya aprobada"
+      ]
+    },
+    {
+      "label": "Materia de Segundo Nivel y Paralelo",
+      "nombre": "materia_2",
+      "tipo": "select",
+      "opciones": [
+        "INF-112 Organ. y Arq. de Computadoras - Paralelo A",
+        "INF-112 Organ. y Arq. de Computadoras - Paralelo C",
+        "Ninguna / Ya aprobada"
+      ]
+    },
+    {
+      "label": "Materia de Tercer Nivel y Paralelo",
+      "nombre": "materia_3",
+      "tipo": "select",
+      "opciones": [
+        "INF-113 Laboratorio de Computación - Paralelo B",
+        "Ninguna / Ya aprobada"
+      ]
+    },
+    {
+      "label": "Turno de Preferencia Alternativo",
+      "nombre": "turno_preferencia",
+      "tipo": "select",
+      "opciones": [
+        "Mañana",
+        "Tarde",
+        "Noche"
+      ]
+    }
+  ],
+  "verif_prereq": [
+    {
+      "label": "Control Técnico de Choques de Horario y Prerrequisitos",
+      "nombre": "control_choques",
+      "tipo": "select",
+      "opciones": [
+        "Cumple todos los requisitos",
+        "Presenta choques de horario",
+        "Faltan prerrequisitos"
+      ]
+    },
+    {
+      "label": "Créditos Académicos Habilitados",
+      "nombre": "creditos_necesarios",
+      "tipo": "number"
+    }
+  ],
+  "verif_cupos": [
+    {
+      "label": "Reporte de Disponibilidad de Vacantes en Servidor",
+      "nombre": "reporte_cupos",
+      "tipo": "select",
+      "opciones": [
+        "Cupos Disponibles Confirmados",
+        "Sin Cupos en Paralelos Solicitados"
+      ]
+    },
+    {
+      "label": "Paralelos Asignados Definitivamente",
+      "nombre": "paralelos_asignados",
+      "tipo": "text"
+    }
+  ],
+  "registrar_inscripcion": [
+    {
+      "label": "Código de Transacción Académica SFE",
+      "nombre": "hash_transaccion",
+      "tipo": "hash"
+    },
+    {
+      "label": "Período Académico Activo",
+      "nombre": "periodo_gestion",
+      "tipo": "select",
+      "opciones": [
+        "I/2026",
+        "II/2026"
+      ]
+    },
+    {
+      "label": "Observaciones Finales de Registro",
+      "nombre": "obs_registro",
+      "tipo": "text"
+    }
+  ],
+  "descargar_boleta": [],
+  "solicitar_cert": [
+    {
+      "label": "Mención de Egreso Correspondiente",
+      "nombre": "mencion_egreso",
+      "tipo": "select",
+      "opciones": [
+        "Ingeniería de Software",
+        "Ciencia de la Computación",
+        "Gestión de Sistemas de Información"
+      ]
+    },
+    {
+      "label": "Año de Ingreso a la Carrera",
+      "nombre": "ano_ingreso",
+      "tipo": "number"
+    },
+    {
+      "label": "Motivo de la Solicitud de Certificado",
+      "nombre": "motivo_egreso",
+      "tipo": "text"
+    },
+    {
+      "label": "Teléfono de Contacto Actualizado",
+      "nombre": "telefono_contacto",
+      "tipo": "number"
+    }
+  ],
+  "verif_historial": [
+    {
+      "label": "Total Créditos Vencidos Solicitante",
+      "nombre": "total_creditos",
+      "tipo": "number"
+    },
+    {
+      "label": "Cantidad de Asignaturas de Plan Aprobadas",
+      "nombre": "cantidad_materias",
+      "tipo": "number"
+    },
+    {
+      "label": "Promedio Académico Actual",
+      "nombre": "promedio_actual",
+      "tipo": "text"
+    }
+  ],
+  "verif_idioma": [
+    {
+      "label": "Validación de Certificado de Idioma Extranjero",
+      "nombre": "idioma_valido",
+      "tipo": "text"
+    },
+    {
+      "label": "Nivel de Idioma Alcanzado",
+      "nombre": "nivel_idioma",
+      "tipo": "select",
+      "opciones": [
+        "Lectura y Comprensión",
+        "Intermedio",
+        "Avanzado / TOEFL"
+      ]
+    },
+    {
+      "label": "Institución Emisora (Ej. CEPIES)",
+      "nombre": "institucion_idioma",
+      "tipo": "text"
+    }
+  ],
+  "verif_interaccion": [
+    {
+      "label": "Certificación de Horas de Interacción Social",
+      "nombre": "interaccion_social",
+      "tipo": "text"
+    },
+    {
+      "label": "Cantidad de Horas Aprobadas",
+      "nombre": "horas_completadas",
+      "tipo": "number"
+    }
+  ],
+  "realizar_pago": [
+    {
+      "label": "Número de Recibo de Caja Bancaria / CPT",
+      "nombre": "recibo_valores",
+      "tipo": "auto",
+      "prefix": "CPT-"
+    },
+    {
+      "label": "Fecha de Transacción",
+      "nombre": "fecha_pago",
+      "tipo": "date"
+    },
+    {
+      "label": "Monto de Depósito de Valores (Bs)",
+      "nombre": "monto_valores",
+      "tipo": "number"
+    },
+    {
+      "label": "Entidad Financiera Recaudadora",
+      "nombre": "banco_valores",
+      "tipo": "select",
+      "opciones": [
+        "Banco Unión S.A.",
+        "Pago Seguro Electrónico (Sintesis)"
+      ]
+    }
+  ],
+  "registrar_pago": [
+    {
+      "label": "Código de Caja / Terminal Tesoro Universitario",
+      "nombre": "terminal_caja",
+      "tipo": "auto",
+      "prefix": "CAJA-"
+    },
+    {
+      "label": "Número de Comprobante / Factura Emitida",
+      "nombre": "nro_comprobante",
+      "tipo": "auto",
+      "prefix": "COMP-"
+    },
+    {
+      "label": "Firma de Conformidad de Recaudaciones TU",
+      "nombre": "firma_cajero",
+      "tipo": "auto",
+      "prefix": "FIRM-"
+    }
+  ],
+  "verif_pago": [
+    {
+      "label": "Estado de Conciliación Bancaria",
+      "nombre": "estado_conciliacion",
+      "tipo": "select",
+      "opciones": [
+        "Aprobado - Fondos en Cuenta",
+        "Rechazado - Fondos Insuficientes o CPT Inválido"
+      ]
+    },
+    {
+      "label": "Verificación de Depósito en Cuenta Corriente",
+      "nombre": "verificacion_bancaria_tu",
+      "tipo": "auto",
+      "prefix": "DEP-"
+    }
+  ],
+  "adjuntar_docs": [
+    {
+      "label": "Enlace a Expediente Digital Consolidado (Google Drive / PDF)",
+      "nombre": "link_expediente",
+      "tipo": "text"
+    },
+    {
+      "label": "Enlace a Fotocopia de CI Vigente",
+      "nombre": "link_ci",
+      "tipo": "text"
+    },
+    {
+      "label": "Enlace a Matrícula Universitaria Vigente",
+      "nombre": "link_matricula",
+      "tipo": "text"
+    }
+  ],
+  "revisar_docs": [
+    {
+      "label": "Total de Fojas (Hojas) del Expediente",
+      "nombre": "fojas_totales",
+      "tipo": "number"
+    },
+    {
+      "label": "Observaciones Internas de Kardex",
+      "nombre": "obs_kardex",
+      "tipo": "text"
+    },
+    {
+      "label": "Informe de Revisión Documental y Foliación Física",
+      "nombre": "informe_foliacion",
+      "tipo": "text"
+    }
+  ],
+  "evaluar_solicitud": [
+    {
+      "label": "Número de Resolución de Dirección (R.D.) de Egreso",
+      "nombre": "resolucion_rd",
+      "tipo": "auto",
+      "prefix": "RD-"
+    },
+    {
+      "label": "Fecha de Aprobación de Resolución",
+      "nombre": "fecha_resolucion",
+      "tipo": "date"
+    },
+    {
+      "label": "Firma Ejecutiva del Director",
+      "nombre": "firma_director",
+      "tipo": "auto",
+      "prefix": "FIRM-DIR-"
+    }
+  ],
+  "emitir_certificado": [
+    {
+      "label": "Número de Serie del Cartón / Valor Físico Impreso",
+      "nombre": "serie_carton",
+      "tipo": "auto",
+      "prefix": "SERIE-"
+    },
+    {
+      "label": "Fecha de Emisión del Documento Formal",
+      "nombre": "fecha_emision_cert",
+      "tipo": "date"
+    },
+    {
+      "label": "Responsable de Impresión de Valores",
+      "nombre": "responsable_impresion",
+      "tipo": "text"
+    }
+  ],
+  "registrar_emision": [
+    {
+      "label": "Número de Libro de Actas de Egreso Carrera",
+      "nombre": "libro_actas",
+      "tipo": "text"
+    },
+    {
+      "label": "Número de Página / Folio de Acta",
+      "nombre": "pagina_acta",
+      "tipo": "number"
+    },
+    {
+      "label": "Número Secuencial de Título Asignado",
+      "nombre": "nro_titulo",
+      "tipo": "number"
+    }
+  ],
+  "recibir_certificado": [],
+  "observacion_general": [
+    {
+      "label": "Detalle u Observación del Trámite",
+      "nombre": "comentario_defecto",
+      "tipo": "text"
+    }
+  ]
+}

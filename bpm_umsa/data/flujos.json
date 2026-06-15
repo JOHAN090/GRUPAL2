@@ -1,0 +1,36 @@
+{
+  "F1": {
+    "nombre": "Inscripción de Materias",
+    "procesos": {
+      "P1":  { "tipo": "I", "rol": "Estudiante", "siguiente": "P2", "pantalla": "activar_cuenta", "nombre": "Activar cuenta" },
+      "P2":  { "tipo": "C", "rol": "Usuarios UMSA", "siguiente": null, "opciones": {"true": "P3", "false": "P1"}, "pantalla": "verif_cuenta", "nombre": "Verificar cuenta institucional" },
+      "P3":  { "tipo": "P", "rol": "Estudiante", "siguiente": "P4", "pantalla": "pago_matricula", "nombre": "Realizar pago de matrícula" },
+      "P4":  { "tipo": "C", "rol": "Sistema SIA", "siguiente": null, "opciones": {"true": "P5", "false": "P3"}, "pantalla": "verif_matricula", "nombre": "Validar pago en SIA" },
+      "P5":  { "tipo": "P", "rol": "Estudiante", "siguiente": "P6", "pantalla": "login_ssa", "nombre": "Ingresar al SSA" },
+      "P6":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P7", "false": "P5"}, "pantalla": "verif_credenciales", "nombre": "Verificar credenciales SSA" },
+      "P7":  { "tipo": "P", "rol": "Estudiante", "siguiente": "P8", "pantalla": "seleccion_materias", "nombre": "Seleccionar materias" },
+      "P8":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P9", "false": "P7"}, "pantalla": "verif_prereq", "nombre": "Verificar prerrequisitos" },
+      "P9":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P10", "false": "P7"}, "pantalla": "verif_cupos", "nombre": "Verificar cupos" },
+      "P10": { "tipo": "P", "rol": "Sistema SSA", "siguiente": "P11", "pantalla": "registrar_inscripcion", "nombre": "Registrar inscripción" },
+      "P11": { "tipo": "E", "rol": "Estudiante", "siguiente": null, "pantalla": "descargar_boleta", "nombre": "Descargar boleta" }
+    }
+  },
+  "F2": {
+    "nombre": "Certificado Académico",
+    "procesos": {
+      "P1":  { "tipo": "I", "rol": "Estudiante", "siguiente": "P2", "pantalla": "solicitar_cert", "nombre": "Solicitar certificado" },
+      "P2":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P3", "false": "P1"}, "pantalla": "verif_historial", "nombre": "Verificar record académico" },
+      "P3":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P4", "false": "P1"}, "pantalla": "verif_idioma", "nombre": "Verificar idioma" },
+      "P4":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P5", "false": "P1"}, "pantalla": "verif_interaccion", "nombre": "Verificar interacción social" },
+      "P5":  { "tipo": "P", "rol": "Estudiante", "siguiente": "P6", "pantalla": "realizar_pago", "nombre": "Realizar pago" },
+      "P6":  { "tipo": "P", "rol": "Tesoro Universitario", "siguiente": "P7", "pantalla": "registrar_pago", "nombre": "Registrar pago y emitir comprobante" },
+      "P7":  { "tipo": "C", "rol": "Sistema SSA", "siguiente": null, "opciones": {"true": "P8", "false": "P5"}, "pantalla": "verif_pago", "nombre": "Verificar pago en sistema" },
+      "P8":  { "tipo": "P", "rol": "Estudiante", "siguiente": "P9", "pantalla": "adjuntar_docs", "nombre": "Adjuntar documentación" },
+      "P9":  { "tipo": "C", "rol": "Kardex Académico", "siguiente": null, "opciones": {"true": "P10", "false": "P8"}, "pantalla": "revisar_docs", "nombre": "Revisar documentación completa" },
+      "P10": { "tipo": "C", "rol": "Dirección de Carrera", "siguiente": null, "opciones": {"true": "P11", "false": "P8"}, "pantalla": "evaluar_solicitud", "nombre": "Evaluar solicitud (Aprobación/Rechazo)" },
+      "P11": { "tipo": "P", "rol": "Kardex Académico", "siguiente": "P12", "pantalla": "emitir_certificado", "nombre": "Emitir certificado" },
+      "P12": { "tipo": "P", "rol": "Sistema SSA", "siguiente": "P13", "pantalla": "registrar_emision", "nombre": "Registrar emisión" },
+      "P13": { "tipo": "E", "rol": "Estudiante", "siguiente": null, "pantalla": "recibir_certificado", "nombre": "Descargar certificado" }
+    }
+  }
+}
